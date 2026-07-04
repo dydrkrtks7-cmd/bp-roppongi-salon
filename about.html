@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-raw-concrete">
+    <title>Roppongi Salon 안내 – 브로들의 정보 창고</title>
+    <meta name="description" content="야, 롯폰기 샐런 정보 필요해? 여기 다 있다, 형! 전화 010-6279-0862로 연락하셈. 롱테일 키워드: 롯폰기 샐런, 도쿄 정보, 브로 추천.">
+    <meta name="keywords" content="롯폰기, 롯폰기 샐런, Roppongi salon, 도쿄, 정보, 추천, 브로">
+    <link rel="canonical" href="https://roppongi-salon.vercel.app/info">
+    <meta property="og:title" content="Roppongi Salon 안내 – 브로들의 정보 창고">
+    <meta property="og:description" content="야, 롯폰기 샐런 정보 필요해? 여기 다 있다, 형! 전화 010-6279-0862로 연락하셈. 롱테일 키워드: 롯폰기 샐런, 도쿄 정보, 브로 추천.">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Courier New', Courier, monospace; background: #f5f0e8; color: #2c2c2c; line-height: 1.6; }
+        img { max-width: 100%; height: auto; display: block; }
+        a { color: #c0392b; text-decoration: underline; text-decoration-thickness: 2px; }
+        a:hover { background: #2c2c2c; color: #f5f0e8; text-decoration: none; padding: 0 4px; }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        section { padding: 40px 0; border-bottom: 4px solid #2c2c2c; }
+        section:last-child { border-bottom: none; }
+
+        h1, h2, h3 { font-weight: 700; text-transform: uppercase; letter-spacing: 2px; }
+        h1 { font-size: 3rem; margin-bottom: 1rem; border-left: 10px solid #c0392b; padding-left: 20px; }
+        h2 { font-size: 2rem; margin-bottom: 1.5rem; border-bottom: 4px solid #c0392b; padding-bottom: 10px; }
+        h3 { font-size: 1.5rem; margin-bottom: 0.75rem; }
+        p, li { font-size: 1.125rem; margin-bottom: 1rem; }
+        .text-big { font-size: 1.5rem; font-weight: 700; }
+
+        header { background: #2c2c2c; color: #f5f0e8; padding: 20px 0; border-bottom: 4px solid #c0392b; }
+        .logo { font-size: 2rem; font-weight: 700; text-transform: uppercase; letter-spacing: 4px; color: #f5f0e8; text-decoration: none; }
+        .logo:hover { background: none; color: #c0392b; }
+        nav.desktop-nav ul { list-style: none; display: flex; gap: 30px; justify-content: flex-end; align-items: center; }
+        nav.desktop-nav ul li a { color: #f5f0e8; text-decoration: none; font-size: 1rem; text-transform: uppercase; letter-spacing: 1px; }
+        nav.desktop-nav ul li a:hover { background: #c0392b; color: #f5f0e8; padding: 4px 8px; }
+
+        .hero { background: #e8dcc8; padding: 80px 0; text-align: center; border-bottom: 4px solid #2c2c2c; }
+        .hero h1 { border-left: none; padding-left: 0; }
+        .hero p { font-size: 1.25rem; max-width: 600px; margin: 0 auto 30px; }
+
+        .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .card { background: #fff; border: 4px solid #2c2c2c; padding: 30px; transition: 0.2s; }
+        .card:hover { background: #2c2c2c; color: #f5f0e8; }
+        .card h3 { border-bottom: 2px solid #c0392b; padding-bottom: 10px; margin-bottom: 15px; }
+
+        .faq-item { border-bottom: 2px solid #2c2c2c; padding: 20px 0; }
+        .faq-item:last-child { border-bottom: none; }
+        .faq-question { font-weight: 700; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+        .faq-answer { margin-top: 10px; display: none; }
+        .faq-item.active .faq-answer { display: block; }
+
+        footer { background: #2c2c2c; color: #f5f0e8; padding: 40px 0; text-align: center; }
+        footer a { color: #f5f0e8; }
+        footer a:hover { background: #c0392b; color: #f5f0e8; }
+
+        .tel-link { display: inline-block; background: #c0392b; color: #f5f0e8; padding: 12px 30px; font-size: 1.5rem; font-weight: 700; text-decoration: none; border: 4px solid #2c2c2c; transition: 0.2s; }
+        .tel-link:hover { background: #2c2c2c; color: #c0392b; border-color: #c0392b; }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.5rem; }
+            .hero { padding: 40px 0; }
+            nav.desktop-nav ul { flex-direction: column; gap: 10px; text-align: center; }
+            .card-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+                <a href="/" class="logo">BRUTAL ROPPONGI</a>
+                <nav class="desktop-nav">
+                    <ul>
+                        <li><a href="/">홈</a></li>
+                        <li><a href="/info">정보</a></li>
+                        <li><a href="/location">위치</a></li>
+                        <li><a href="/contact">문의</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>🔥 롯폰기 샐런 완전 정리</h1>
+            <p class="text-big">야, 형! 여기 롯폰기에서 제대로 놀고 싶다면?<br>이 페이지 하나면 끝이야. 010-6279-0862로 전화 줘.</p>
+            <a href="tel:010-6279-0862" class="tel-link">📞 010-6279-0862</a>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>📍 롯폰기 샐런이 뭐야?</h2>
+            <p>간단히 말해서, 도쿄 밤문화의 핵심이야. 롯폰기는 외국인도 많고 분위기도 자유로워. 샐런은 일반 클럽보다 더 프라이빗하고, 말하자면 '진짜 정보'가 오가는 곳이지. 내가 직접 경험한 바로는, 문 열자마자 느껴지는 그 에너지 — 형, 한 번 가보면 안다니까.</p>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>💎 프리미엄 서비스</h3>
+                    <p>VIP 라운지, 맞춤형 케어, 무제한 드링크. 처음 가는 사람도 걱정 마. 직원들이 다 친절하게 안내해줘.</p>
+                </div>
+                <div class="card">
+                    <h3>🌐 글로벌 분위기</h3>
+                    <p>일본인, 한국인, 서양인 할 것 없이 다 모여. 영어도 통하고, 한국어도 통하고. 말이 안 통할 걱정은 끝!</p>
+                </div>
+                <div class="card">
+                    <h3>🔒 완벽한 프라이버시</h3>
+                    <p>입구에서부터 철통 보안. 실수로 아는 사람 만날 걱정 없어. 완전히 새로운 세상에 들어온 기분이야.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="background: #e8dcc8;">
+        <div class="container">
+            <h2>🤔 자주 묻는 질문 (FAQ)</h2>
+            <p>형들이 제일 궁금해하는 것만 모았어. 더 궁금하면 전화해!</p>
+
+            <div class="faq-item">
+                <div class="faq-question">첫 방문인데 어떻게 해? <span>+</span></div>
+                <div class="faq-answer">간단해. 전화 010-6279-0862로 미리 연락만 하면 내가 다 세팅해줘. 입장료, 위치, 드레스 코드까지 다 알려줌. 부담 갖지 마, 형!</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">가격은 얼마야? <span>+</span></div>
+                <div class="faq-answer">보통 커버차지 1~3만 엔 정도. 음료는 별도. 근데 내 추천으로 가면 첫 잔 서비스 받을 수 있어. 전화해봐, 진짜야.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">혼자 가도 돼? <span>+</span></div>
+                <div class="faq-answer">당연하지! 오히려 혼자가 더 재밌을 때도 있어. 현지 브로들이랑 금방 친해져. 물론 나도 거기 있으니까 전화 줘.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">언제 가는 게 좋아? <span>+</span></div>
+                <div class="faq-answer">보통 금요일 토요일 밤 11시 이후가 절정이야. 하지만 미리 연락하면 어떤 날이든 맞춰줄 수 있어.</div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>🕹️ 브로만의 팁</h2>
+            <p>내가 몇 번 다녀보니까 이런 꿀팁이 있더라:</p>
+            <ul style="margin-left: 30px;">
+                <li>무조건 <strong>전화 먼저</strong> 해. 현장 가면 웨이팅 있을 수 있어.</li>
+                <li>옷은 <strong>깔끔한 스마트 캐주얼</strong>이 베스트. 넥타이는 필요 없어.</li>
+                <li>일본어 몰라도 괜찮아. 직원들이 다 영어랑 한국어 기본으로 해.</li>
+                <li>첫 방문이면 <strong>샴페인 한 병</strong> 시켜봐. 분위기 확 살아나.</li>
+            </ul>
+            <p style="margin-top: 20px;">더 알고 싶으면 전화해, 형! 010-6279-0862로 바로 나야.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© BRUTAL ROPPONGI — 브로들의 정보 창고</p>
+            <p><a href="tel:010-6279-0862">📞 010-6279-0862</a> | <a href="mailto:bro@roppongi-salon.com">bro@roppongi-salon.com</a></p>
+            <p style="margin-top: 10px; font-size: 0.9rem;">롯폰기 샐런 · 도쿄 정보 · 브로 추천</p>
+        </div>
+    </footer>
+
+    <script>
+        // 간단한 FAQ 토글
+        document.querySelectorAll('.faq-question').forEach(function(q) {
+            q.addEventListener('click', function() {
+                this.parentElement.classList.toggle('active');
+                const span = this.querySelector('span');
+                if(span.textContent === '+') {
+                    span.textContent = '−';
+                } else {
+                    span.textContent = '+';
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

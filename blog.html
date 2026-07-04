@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="bpaas-design-system" content="brutalist-avantgarde">
+  <meta name="bpaas-design-theme" content="kr-raw-concrete">
+  <title>블로그 – 롯폰기 샐런 브로 가이드</title>
+  <meta name="description" content="야, 형! 롯폰기 샐런 정보 다 모았다. 전화 010-6279-0862로 연락하셈. 브로의 진짜 경험담이 담긴 블로그.">
+  <meta name="keywords" content="롯폰기, 롯폰기 샐런, Roppongi salon, 블로그, 도쿄 정보, 브로 추천">
+  <link rel="canonical" href="https://roppongi-salon.vercel.app/blog/">
+  <meta property="og:title" content="블로그 – 롯폰기 샐런 브로 가이드">
+  <meta property="og:description" content="야, 형! 롯폰기 샐런 정보 다 모았다. 전화 010-6279-0862로 연락하셈. 브로의 진짜 경험담이 담긴 블로그.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://roppongi-salon.vercel.app/blog/">
+  <meta name="twitter:card" content="summary_large_image">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Courier New', Courier, 'Noto Sans KR', monospace;
+      background: #d9cdb4;
+      color: #1a1a1a;
+      line-height: 1.6;
+      padding: 0 1rem;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      border: 3px solid #1a1a1a;
+      box-shadow: 5px 5px 0 #1a1a1a;
+      margin: 1.5rem 0;
+    }
+    a {
+      color: #1a1a1a;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    a:hover {
+      color: #c0392b;
+      background: #f1c40f;
+      text-decoration: none;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    section {
+      margin: 4rem 0;
+    }
+    h1, h2, h3 {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 900;
+      border-left: 6px solid #1a1a1a;
+      padding-left: 0.75rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin: 2rem 0 1rem;
+      line-height: 1.1;
+    }
+    h2 {
+      font-size: 1.8rem;
+      margin: 2.5rem 0 1rem;
+    }
+    h3 {
+      font-size: 1.3rem;
+      margin: 1.5rem 0 0.75rem;
+    }
+    p, li {
+      font-size: 1rem;
+      margin-bottom: 1.2rem;
+    }
+    .text-big {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+    header {
+      border-bottom: 4px solid #1a1a1a;
+      padding: 1.5rem 0;
+      margin-bottom: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 2rem;
+      font-weight: 900;
+      text-decoration: none;
+      color: #1a1a1a;
+      background: #f1c40f;
+      padding: 0.25rem 1rem;
+      border: 3px solid #1a1a1a;
+      box-shadow: 4px 4px 0 #1a1a1a;
+      transition: all 0.1s ease;
+    }
+    .logo:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: 6px 6px 0 #1a1a1a;
+    }
+    nav.desktop-nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.2rem;
+    }
+    nav.desktop-nav ul li a {
+      font-weight: 700;
+      font-size: 1rem;
+      text-transform: uppercase;
+      padding: 0.3rem 0.8rem;
+      border: 2px solid transparent;
+    }
+    nav.desktop-nav ul li a:hover,
+    nav.desktop-nav ul li a.current {
+      background: #1a1a1a;
+      color: #d9cdb4;
+      border-color: #1a1a1a;
+    }
+    .hamburger-menu {
+      display: none;
+      cursor: pointer;
+      font-size: 2rem;
+      background: none;
+      border: 2px solid #1a1a1a;
+      padding: 0.2rem 0.6rem;
+    }
+    .tel-link {
+      display: inline-block;
+      background: #c0392b;
+      color: #fff;
+      font-weight: 900;
+      padding: 0.3rem 1rem;
+      border: 2px solid #1a1a1a;
+      box-shadow: 3px 3px 0 #1a1a1a;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+    .tel-link:hover {
+      background: #e74c3c;
+      color: #fff;
+      transform: translate(-1px, -1px);
+      box-shadow: 4px 4px 0 #1a1a1a;
+    }
+    footer {
+      border-top: 4px solid #1a1a1a;
+      padding: 2rem 0;
+      margin-top: 4rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    /* 카드/아티클 스타일 */
+    .blog-card {
+      background: #ebe5d6;
+      border: 3px solid #1a1a1a;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 6px 6px 0 #1a1a1a;
+    }
+    .blog-card .meta {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #555;
+      margin-bottom: 0.5rem;
+    }
+    .blog-card h2 {
+      border-left: none;
+      padding-left: 0;
+      margin-top: 0;
+    }
+    .blog-card .read-more {
+      display: inline-block;
+      background: #1a1a1a;
+      color: #d9cdb4;
+      padding: 0.4rem 1.2rem;
+      text-decoration: none;
+      font-weight: 700;
+      border: 2px solid #1a1a1a;
+      transition: 0.1s;
+    }
+    .blog-card .read-more:hover {
+      background: #f1c40f;
+      color: #1a1a1a;
+    }
+
+    /* FAQ 스타일 (기존 유지) */
+    .faq-item {
+      border-bottom: 2px solid #1a1a1a;
+      padding: 1.2rem 0;
+    }
+    .faq-item summary {
+      font-weight: 700;
+      cursor: pointer;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      list-style: none;
+    }
+    .faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+    .faq-item summary::before {
+      content: "▶ ";
+      font-size: 0.8rem;
+    }
+    .faq-item[open] summary::before {
+      content: "▼ ";
+    }
+    .faq-item p {
+      margin-top: 1rem;
+      padding-left: 1.2rem;
+    }
+
+    @media (max-width: 768px) {
+      .hamburger-menu {
+        display: block;
+      }
+      nav.desktop-nav {
+        display: none;
+        width: 100%;
+        margin-top: 1rem;
+      }
+      nav.desktop-nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      nav.desktop-nav.open {
+        display: block;
+      }
+      h1 {
+        font-size: 1.8rem;
+      }
+      h2 {
+        font-size: 1.4rem;
+      }
+      .blog-card {
+        padding: 1rem;
+      }
+    }
+  </style>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+
+  <header class="container">
+    <a href="/" class="logo">R.SALON</a>
+    <span class="hamburger-menu" onclick="document.querySelector('.desktop-nav').classList.toggle('open')">☰</span>
+    <nav class="desktop-nav">
+      <ul>
+        <li><a href="/">홈</a></li>
+        <li><a href="/about">소개</a></li>
+        <li><a href="/blog/" class="current">블로그</a></li>
+        <li><a href="/contact">문의</a></li>
+        <li><a href="tel:010-6279-0862" class="tel-link">010-6279-0862</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>📖 브로 블로그</h1>
+    <p class="text-big">야, 형! 여기 롯폰기 샐런에 대한 내 경험과 꿀팁을 다 풀어놨다. 진짜 도움되는 정보만 쏙쏙 골랐으니 끝까지 봐라.</p>
+
+    <!-- 블로그 글 1편 -->
+    <article class="blog-card">
+      <div class="meta">📅 2025.02.15 &nbsp;|&nbsp; ✍️ 브로K</div>
+      <h2>롯폰기 샐런 완벽 정복 – 브로가 알려주는 5가지 꿀팁</h2>
+      <p>첫 롯폰기 방문 때부터 지금까지, 수많은 샐런을 돌아다닌 브로로서 확실히 말할 수 있다. <strong>처음엔 누구나 쫄린다.</strong> 하지만 몇 번 다녀보면 이 동네가 왜 핫한지 알게 된다. 오늘은 내가 직접 겪고 느낀 <strong>롯폰기 샐런 필수 룰</strong>을 공개한다.</p>
+
+      <h3>1. 위치부터 확인하자</h3>
+      <p>롯폰기 역에서 도보 5분 안에 샐런이 몰려 있다. 하지만 골목골목 헷갈릴 수 있으니 <strong>네비게이션</strong>을 꼭 켜라. 특히 첫 방문이면 더더욱. 내가 그랬다. 10분을 헤맨 적도 있다. 근데 그게 오히려 재밌더라. 길을 잃으면 새로운 가게를 발견할 수도 있다.</p>
+
+      <h3>2. 가격보다 분위기</h3>
+      <p>비싼 곳이 무조건 좋은 건 아니다. 형, 너한테 맞는 분위기를 찾는 게 진짜 중요하다. 나는 처음에 유명한 곳만 갔는데, 오히려 허름해 보이는 작은 가게에서 <strong>인생 체험</strong>을 했다. 인테리어, 음악, 직원들의 말투 – 이 모든 게 분위기를 만든다. 한 번 가서 분 망하면 돈 아깝다. 꼭 리서치 하고 가라.</p>
+
+      <h3>3. 직원과 친해져라</h3>
+      <p>이게 진짜 꿀팁이다. 가게 직원에게 <strong>존중을 보여라</strong>. 간단한 일본어 인사만 해도 반응이 완전 다르다. 내 경우, 아는 척 '오스! (押忍!)' 하고 들어갔더니 서비스로 한
+</body>
+</html>
