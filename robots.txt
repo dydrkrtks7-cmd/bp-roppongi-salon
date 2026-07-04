@@ -7,4 +7,4 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-Sitemap: https://roppongi-salon.pages.dev/sitemap.xml
+Sitemap: https://roppongi-salon-style.pbn-builder.xyz/sitemap.xml
