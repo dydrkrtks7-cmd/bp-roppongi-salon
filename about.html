@@ -1,81 +1,183 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<title>등촌 풀싸롱 정보 - 상세 가이드</title>
-<meta name="description" content="등촌 풀싸롱을 선택하기 전 반드시 확인해야 할 조건과 이용자 유형별 맞춤 가이드를 제공합니다. 신뢰할 수 있는 데이터 기반 비교표와 실전 체크리스트를 확인하세요.">
-<meta name="keywords" content="등촌 풀싸롱, 풀싸롱 추천, 등촌 클럽 가이드, 풀싸롱 조건, 풀싸롱 비교표">
-<link rel="canonical" href="https://deungchon-fullsalon-note.tipdesk.site/about.html">
-<meta property="og:title" content="등촌 풀싸롱 추천 가이드 — 조건별 선택과 사전 체크 포인트">
-<meta property="og:description" content="등촌 풀싸롱을 선택하기 전 반드시 확인해야 할 조건과 이용자 유형별 맞춤 가이드를 제공합니다.">
-<meta property="og:url" content="https://deungchon-fullsalon-note.tipdesk.site/about.html">
-<meta property="og:type" content="website">
-<meta property="og:image" content="https://deungchon-fullsalon-note.t">
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-raw-concrete">
+    <title>Roppongi Salon 안내 – 브로들의 정보 창고</title>
+    <meta name="description" content="야, 롯폰기 샐런 정보 필요해? 여기 다 있다, 형! 전화 010-6279-0862로 연락하셈. 롱테일 키워드: 롯폰기 샐런, 도쿄 정보, 브로 추천.">
+    <meta name="keywords" content="롯폰기, 롯폰기 샐런, Roppongi salon, 도쿄, 정보, 추천, 브로">
+    <link rel="canonical" href="https://deungchon-fullsalon-note.tipdesk.site/about.html">
+    <meta property="og:title" content="Roppongi Salon 안내 – 브로들의 정보 창고">
+    <meta property="og:description" content="야, 롯폰기 샐런 정보 필요해? 여기 다 있다, 형! 전화 010-6279-0862로 연락하셈. 롱테일 키워드: 롯폰기 샐런, 도쿄 정보, 브로 추천.">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Courier New', Courier, monospace; background: #f5f0e8; color: #2c2c2c; line-height: 1.6; }
+        img { max-width: 100%; height: auto; display: block; }
+        a { color: #c0392b; text-decoration: underline; text-decoration-thickness: 2px; }
+        a:hover { background: #2c2c2c; color: #f5f0e8; text-decoration: none; padding: 0 4px; }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        section { padding: 40px 0; border-bottom: 4px solid #2c2c2c; }
+        section:last-child { border-bottom: none; }
+
+        h1, h2, h3 { font-weight: 700; text-transform: uppercase; letter-spacing: 2px; }
+        h1 { font-size: 3rem; margin-bottom: 1rem; border-left: 10px solid #c0392b; padding-left: 20px; }
+        h2 { font-size: 2rem; margin-bottom: 1.5rem; border-bottom: 4px solid #c0392b; padding-bottom: 10px; }
+        h3 { font-size: 1.5rem; margin-bottom: 0.75rem; }
+        p, li { font-size: 1.125rem; margin-bottom: 1rem; }
+        .text-big { font-size: 1.5rem; font-weight: 700; }
+
+        header { background: #2c2c2c; color: #f5f0e8; padding: 20px 0; border-bottom: 4px solid #c0392b; }
+        .logo { font-size: 2rem; font-weight: 700; text-transform: uppercase; letter-spacing: 4px; color: #f5f0e8; text-decoration: none; }
+        .logo:hover { background: none; color: #c0392b; }
+        nav.desktop-nav ul { list-style: none; display: flex; gap: 30px; justify-content: flex-end; align-items: center; }
+        nav.desktop-nav ul li a { color: #f5f0e8; text-decoration: none; font-size: 1rem; text-transform: uppercase; letter-spacing: 1px; }
+        nav.desktop-nav ul li a:hover { background: #c0392b; color: #f5f0e8; padding: 4px 8px; }
+
+        .hero { background: #e8dcc8; padding: 80px 0; text-align: center; border-bottom: 4px solid #2c2c2c; }
+        .hero h1 { border-left: none; padding-left: 0; }
+        .hero p { font-size: 1.25rem; max-width: 600px; margin: 0 auto 30px; }
+
+        .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .card { background: #fff; border: 4px solid #2c2c2c; padding: 30px; transition: 0.2s; }
+        .card:hover { background: #2c2c2c; color: #f5f0e8; }
+        .card h3 { border-bottom: 2px solid #c0392b; padding-bottom: 10px; margin-bottom: 15px; }
+
+        .faq-item { border-bottom: 2px solid #2c2c2c; padding: 20px 0; }
+        .faq-item:last-child { border-bottom: none; }
+        .faq-question { font-weight: 700; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+        .faq-answer { margin-top: 10px; display: none; }
+        .faq-item.active .faq-answer { display: block; }
+
+        footer { background: #2c2c2c; color: #f5f0e8; padding: 40px 0; text-align: center; }
+        footer a { color: #f5f0e8; }
+        footer a:hover { background: #c0392b; color: #f5f0e8; }
+
+        .tel-link { display: inline-block; background: #c0392b; color: #f5f0e8; padding: 12px 30px; font-size: 1.5rem; font-weight: 700; text-decoration: none; border: 4px solid #2c2c2c; transition: 0.2s; }
+        .tel-link:hover { background: #2c2c2c; color: #c0392b; border-color: #c0392b; }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.5rem; }
+            .hero { padding: 40px 0; }
+            nav.desktop-nav ul { flex-direction: column; gap: 10px; text-align: center; }
+            .card-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+  <meta property="og:url" content="https://deungchon-fullsalon-note.tipdesk.site/about.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
 </head>
-<body class="k-body-gzxj">
-<header class="t-hero-r6dp">
-<h1>등촌 풀싸롱 상세 정보</h1>
-<p>이 페이지는 등촌 지역에 위치한 풀싸롱을 선택하려는 모든 이용자를 위한 심층 가이드입니다. 강렬한 어조와 직접적인 조언을 통해 흔히 간과되는 위험 요소와 최적의 선택 기준을 제시합니다.</p>
-</header>
+<body>
 
-<nav class="r-box-rnta">
-<ul>
-<li><a href="/index.html">홈</a></li>
-<li><a href="/guide.html">가이드</a></li>
-<li><a href="/faq.html">FAQ</a></li>
-<li><a href="/contact.html">연락처</a></li>
-</ul>
-</nav>
+    <header>
+        <div class="container">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+                <a href="/" class="logo">BRUTAL ROPPONGI</a>
+                <nav class="desktop-nav">
+                    <ul>
+                        <li><a href="/">홈</a></li>
+                        <li><a href="/info">정보</a></li>
+                        <li><a href="/location">위치</a></li>
+                        <li><a href="/contact">문의</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
 
-<main class="r-wrap-mf6v">
-<section class="r-item-kiug">
-<h2>1. 기본 운영 조건 체크리스트</h2>
-<p>첫 번째 체크 포인트는 영업시간과 예약 방식입니다. 등촌 풀싸롱은 대부분 사전 예약을 요구하지만, 일부는 현장 접수도 허용합니다. 운영 시간대가 늦은 밤까지 이어지는 경우, 교통편과 안전을 미리 확보해야 합니다.</p>
-<p>두 번째는 시설 내 위생 관리 수준입니다. 실내 청소 주기, 손소독제 비치 여부, 소독 장비 사용 여부를 확인하세요. 위생 관리가 미흡하면 감염 위험이 커집니다.</p>
-</section>
+    <section class="hero">
+        <div class="container">
+            <h1>🔥 롯폰기 샐런 완전 정리</h1>
+            <p class="text-big">야, 형! 여기 롯폰기에서 제대로 놀고 싶다면?<br>이 페이지 하나면 끝이야. 010-6279-0862로 전화 줘.</p>
+            <a href="tel:010-6279-0862" class="tel-link">📞 010-6279-0862</a>
+        </div>
+    </section>
 
-<section class="r-item-kiug">
-<h2>2. 이용자 유형별 맞춤 가이드</h2>
-<p><strong>신규 방문자</strong>는 처음 방문하는 만큼, 실내 사진과 직원 프로필을 사전에 확인하는 것이 좋습니다. 투명한 프로필 공개가 없는 곳은 신뢰도가 낮을 수 있습니다.</p>
-<p><strong>단골 고객</strong>은 멤버십 혜택과 포인트 적립 제도를 중점적으로 살펴보세요. 등촌 지역 일부 풀싸롱은 고정 고객에게 전용 라운지와 프리미엄 서비스를 제공하고 있습니다.</p>
-<p><strong>그룹 방문</strong>은 인원 수에 따라 별도 요금 정책이 적용됩니다. 4인 이상 그룹일 경우, 별도 방을 예약하거나 사전 협의가 필요합니다.</p>
-<p><strong>시간대별 목적</strong>에 따라 선택이 달라집니다. 예를 들어, 저녁 시간대는 분위기 연출에 중점을 둔 장소를, 새벽 시간대는 보안과 안전이 강화된 장소를 우선 고려해야 합니다.</p>
-</section>
+    <section>
+        <div class="container">
+            <h2>📍 롯폰기 샐런이 뭐야?</h2>
+            <p>간단히 말해서, 도쿄 밤문화의 핵심이야. 롯폰기는 외국인도 많고 분위기도 자유로워. 샐런은 일반 클럽보다 더 프라이빗하고, 말하자면 '진짜 정보'가 오가는 곳이지. 내가 직접 경험한 바로는, 문 열자마자 느껴지는 그 에너지 — 형, 한 번 가보면 안다니까.</p>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>💎 프리미엄 서비스</h3>
+                    <p>VIP 라운지, 맞춤형 케어, 무제한 드링크. 처음 가는 사람도 걱정 마. 직원들이 다 친절하게 안내해줘.</p>
+                </div>
+                <div class="card">
+                    <h3>🌐 글로벌 분위기</h3>
+                    <p>일본인, 한국인, 서양인 할 것 없이 다 모여. 영어도 통하고, 한국어도 통하고. 말이 안 통할 걱정은 끝!</p>
+                </div>
+                <div class="card">
+                    <h3>🔒 완벽한 프라이버시</h3>
+                    <p>입구에서부터 철통 보안. 실수로 아는 사람 만날 걱정 없어. 완전히 새로운 세상에 들어온 기분이야.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section class="r-item-kiug">
-<h2>3. 실전 비교표</h2>
-<ul class="q-wrap-nafs">
-<li>위치 접근성 – 지하철 3호선 등촌역 도보 5분 이내</li>
-<li>가격 정책 – 기본 요금, 추가 서비스 별도 청구 여부</li>
-<li>보안 시스템 – CCTV 설치 현황, 출입 통제 방식</li>
-<li>고객 서비스 – 응대 시간, 사후 관리 체계</li>
-<li>특수 옵션 – 프라이빗 룸, 테마 이벤트 제공 여부</li>
-</ul>
-<p>위 항목들을 기준으로 자신에게 가장 중요한 요소를 가중치로 두고, 최종 점수를 매겨 보세요. 객관적인 데이터와 개인적인 우선순위를 결합하면 최적의 선택이 가능합니다.</p>
-</section>
+    <section style="background: #e8dcc8;">
+        <div class="container">
+            <h2>🤔 자주 묻는 질문 (FAQ)</h2>
+            <p>형들이 제일 궁금해하는 것만 모았어. 더 궁금하면 전화해!</p>
 
-<section class="r-item-kiug">
-<h2>4. 자주 묻는 질문 (FAQ)</h2>
-<dl>
-<dt>예약 취소는 언제까지 가능한가요?</dt>
-<dd>대부분의 등촌 풀싸롱은 24시간 전까지 무료 취소를 허용합니다. 그러나 프리미엄 룸은 48시간 전까지 사전 통보가 필요합니다.</dd>
-<dt>신분 확인은 어떻게 이루어지나요?</dt>
-<dd>입장 시 신분증 제시가 필수이며, 일부 업소는 실시간 얼굴 인식 시스템을 도입해 보안을 강화하고 있습니다.</dd>
-<dt>음주 서비스는 제공되나요?</dt>
-<dd>음주 가능 여부는 업소마다 다르며, 주류 판매가 허가된 장소에서는 별도 주류 메뉴를 확인해야 합니다. 음주 시 과도한 서비스 요청은 제한될 수 있습니다.</dd>
-</dl>
-<p>FAQ는 상황에 따라 업데이트되므로, 방문 전 최신 정보를 반드시 확인하세요. 새로운 질문이 있으면 고객센터에 직접 문의하는 것이 가장 확실합니다.</p>
-</section>
-</main>
+            <div class="faq-item">
+                <div class="faq-question">첫 방문인데 어떻게 해? <span>+</span></div>
+                <div class="faq-answer">간단해. 전화 010-6279-0862로 미리 연락만 하면 내가 다 세팅해줘. 입장료, 위치, 드레스 코드까지 다 알려줌. 부담 갖지 마, 형!</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">가격은 얼마야? <span>+</span></div>
+                <div class="faq-answer">보통 커버차지 1~3만 엔 정도. 음료는 별도. 근데 내 추천으로 가면 첫 잔 서비스 받을 수 있어. 전화해봐, 진짜야.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">혼자 가도 돼? <span>+</span></div>
+                <div class="faq-answer">당연하지! 오히려 혼자가 더 재밌을 때도 있어. 현지 브로들이랑 금방 친해져. 물론 나도 거기 있으니까 전화 줘.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">언제 가는 게 좋아? <span>+</span></div>
+                <div class="faq-answer">보통 금요일 토요일 밤 11시 이후가 절정이야. 하지만 미리 연락하면 어떤 날이든 맞춰줄 수 있어.</div>
+            </div>
+        </div>
+    </section>
 
-<footer class="n-foot-o4pe">
-<ul>
-<li><a href="/privacy.html">개인정보 처리방침</a></li>
-<li><a href="/terms.html">이용약관</a></li>
-<li><a href="/sitemap.html">사이트맵</a></li>
-<li>&copy; 2026 등촌 풀싸롱 가이드. All rights reserved.</li>
-</ul>
-</footer>
+    <section>
+        <div class="container">
+            <h2>🕹️ 브로만의 팁</h2>
+            <p>내가 몇 번 다녀보니까 이런 꿀팁이 있더라:</p>
+            <ul style="margin-left: 30px;">
+                <li>무조건 <strong>전화 먼저</strong> 해. 현장 가면 웨이팅 있을 수 있어.</li>
+                <li>옷은 <strong>깔끔한 스마트 캐주얼</strong>이 베스트. 넥타이는 필요 없어.</li>
+                <li>일본어 몰라도 괜찮아. 직원들이 다 영어랑 한국어 기본으로 해.</li>
+                <li>첫 방문이면 <strong>샴페인 한 병</strong> 시켜봐. 분위기 확 살아나.</li>
+            </ul>
+            <p style="margin-top: 20px;">더 알고 싶으면 전화해, 형! 010-6279-0862로 바로 나야.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© BRUTAL ROPPONGI — 브로들의 정보 창고</p>
+            <p><a href="tel:010-6279-0862">📞 010-6279-0862</a> | <a href="mailto:bro@roppongi-salon.com">bro@roppongi-salon.com</a></p>
+            <p style="margin-top: 10px; font-size: 0.9rem;">롯폰기 샐런 · 도쿄 정보 · 브로 추천</p>
+        </div>
+    </footer>
+
+    <script>
+        // 간단한 FAQ 토글
+        document.querySelectorAll('.faq-question').forEach(function(q) {
+            q.addEventListener('click', function() {
+                this.parentElement.classList.toggle('active');
+                const span = this.querySelector('span');
+                if(span.textContent === '+') {
+                    span.textContent = '−';
+                } else {
+                    span.textContent = '+';
+                }
+            });
+        });
+    </script>
+
 </body>
 </html>
